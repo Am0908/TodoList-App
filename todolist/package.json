@@ -18,8 +18,4 @@
     "lodash": "^4.17.21",
     "mongoose": "^6.3.0"
   }
-  "scripts": {
-  "start": "some command to be run", 
-  "test": "(eslint lib || true) && jest"
-}
 }
