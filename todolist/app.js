@@ -13,7 +13,7 @@ app.set("view engine", "ejs");
 app.use(bodyparser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://cluster0.hvctvpc.mongodb.net/todolistDB");
+mongoose.connect("mongodb://amrita:amrita@ac-mbjigi8-shard-00-00.hvctvpc.mongodb.net:27017,ac-mbjigi8-shard-00-01.hvctvpc.mongodb.net:27017,ac-mbjigi8-shard-00-02.hvctvpc.mongodb.net:27017/?ssl=true&replicaSet=atlas-i3hu0h-shard-0&authSource=admin&retryWrites=true&w=majority");
 const itemSchema = new mongoose.Schema({
   name: String
 });
