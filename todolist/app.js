@@ -13,7 +13,7 @@ app.set("view engine", "ejs");
 app.use(bodyparser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongosh "mongodb+srv://cluster0.hvctvpc.mongodb.net/todolistDB" --apiVersion 1 --username <amrita>");
+mongoose.connect("mongodb+srv://cluster0.hvctvpc.mongodb.net/todolistDB");
 const itemSchema = new mongoose.Schema({
   name: String
 });
